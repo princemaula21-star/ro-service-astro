@@ -1,0 +1,72 @@
+---
+import Header from '../components/Header.astro';
+import FloatingButtons from '../components/FloatingButtons.astro';
+import '../styles/global.css';
+---
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="#1e3a8a" />
+		
+		<!-- Primary Meta Tags -->
+		<title>Rofix Service | Expert RO Repair & Service Center in Bangalore</title>
+		<meta name="title" content="Rofix Service | Expert RO Repair & Service Center in Bangalore" />
+		<meta name="description" content="Rofix Service - Trusted RO repair and service center in Bangalore. Same-day doorstep service, genuine parts, certified technicians. Call +91-9008315606" />
+		<meta name="keywords" content="RO repair Bangalore, water purifier service, Kent service, Aquaguard repair, RO service near me, RO technician Bangalore" />
+		<meta name="robots" content="index, follow" />
+		<meta name="language" content="English" />
+		<meta name="author" content="Rofix Service" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://rofixservice.in/" />
+		<meta property="og:title" content="Rofix Service | Expert RO Repair & Service in Bangalore" />
+		<meta property="og:description" content="Same-day doorstep RO service in Bangalore. Certified technicians, genuine parts, 90-day warranty." />
+		<meta property="og:site_name" content="Rofix Service" />
+
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Rofix Service | Expert RO Repair in Bangalore" />
+		<meta name="twitter:description" content="Same-day doorstep RO service in Bangalore." />
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+		<!-- Preconnect for speed -->
+		<link rel="preconnect" href="https://formsubmit.co" />
+		<link rel="dns-prefetch" href="https://formsubmit.co" />
+
+		<!-- Canonical -->
+		<link rel="canonical" href={Astro.url} />
+
+		<!-- LocalBusiness Schema -->
+		<script type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Rofix Service",
+			"description": "Expert RO repair and service center in Bangalore",
+			"telephone": "+91-9008315606",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Bangalore",
+				"addressRegion": "Karnataka",
+				"addressCountry": "IN"
+			},
+			"areaServed": "Bangalore",
+			"priceRange": "₹₹",
+			"openingHours": "Mo-Su 09:00-20:00",
+			"aggregateRating": {
+				"@type": "AggregateRating",
+				"ratingValue": "4.8",
+				"reviewCount": "150"
+			}
+		})} />
+	</head>
+	<body class="font-sans antialiased text-gray-800 bg-white">
+		<Header />
+		<slot />
+		<FloatingButtons />
+	</body>
+</html>

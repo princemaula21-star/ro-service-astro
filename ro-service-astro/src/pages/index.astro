@@ -1,0 +1,86 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
+import Stats from '../components/Stats.astro';
+import WhyChooseUs from '../components/WhyChooseUs.astro';
+import Testimonials from '../components/Testimonials.astro';
+import FAQ from '../components/FAQ.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout>
+  <main>
+    <Hero />
+    
+    <!-- DIVIDER -->
+    <div class="max-w-md mx-auto px-4">
+      <div class="flex items-center gap-3">
+        <div class="flex-1 h-px bg-slate-200"></div>
+        <div class="text-slate-300 text-xs">◆</div>
+        <div class="flex-1 h-px bg-slate-200"></div>
+      </div>
+    </div>
+
+    <!-- TRUST HEADLINE + STATS + IMAGE SECTION -->
+    <section class="py-8 px-4 bg-white">
+      <div class="max-w-md mx-auto">
+        
+        <!-- Heading -->
+        <div class="text-center mb-5">
+          <p class="text-sm md:text-base text-slate-600 leading-relaxed">
+            <strong class="text-slate-900">Why Bangalore Families Trust Rofix Service</strong>
+          </p>
+        </div>
+
+        <!-- Stats Row -->
+        <div class="grid grid-cols-3 gap-3 mb-6">
+          <div class="text-center">
+            <p class="text-xl md:text-2xl font-bold text-blue-900">15+</p>
+            <p class="text-[10px] text-slate-500 mt-0.5 uppercase tracking-wide">Years Experience</p>
+          </div>
+          <div class="text-center">
+            <p class="text-xl md:text-2xl font-bold text-blue-900">20,000+</p>
+            <p class="text-[10px] text-slate-500 mt-0.5 uppercase tracking-wide">Happy Families</p>
+          </div>
+          <div class="text-center">
+            <p class="text-xl md:text-2xl font-bold text-blue-900">4.8★</p>
+            <p class="text-[10px] text-slate-500 mt-0.5 uppercase tracking-wide">Average Rating</p>
+          </div>
+        </div>
+
+        <!-- Trust Image -->
+        <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-slate-100">
+          <img 
+            src="/trust-image.jpg" 
+            alt="Certified RO Technician"
+            width="800" height="600" loading="lazy" class="w-full h-52 md:h-60 object-cover"
+          />
+        </div>
+        
+        <div class="mt-4 text-center">
+          <p class="text-sm font-semibold text-slate-700">Certified & Verified Technicians</p>
+          <p class="text-xs text-slate-500 mt-1">Trained on all major water purifier brands</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="max-w-md mx-auto px-4">
+      <div class="flex items-center gap-3">
+        <div class="flex-1 h-px bg-slate-200"></div>
+        <div class="text-slate-300 text-xs">◆</div>
+        <div class="flex-1 h-px bg-slate-200"></div>
+      </div>
+    </div>
+
+    <Services />
+    <Stats />
+    <WhyChooseUs />
+    <Testimonials />
+    <FAQ />
+    <ContactCTA />
+  </main>
+  <Footer />
+</Layout>

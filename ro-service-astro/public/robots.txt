@@ -1,0 +1,20 @@
+# Rofix Service - robots.txt
+# Allowing all search engines to crawl the site
+
+User-agent: *
+Allow: /
+
+# Block access to sensitive/admin paths (if any in future)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://rofixservice.in/sitemap-index.xml
+
+# Crawl-delay for aggressive bots (optional)
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
