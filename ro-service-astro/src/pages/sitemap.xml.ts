@@ -3,7 +3,6 @@ import type { APIRoute } from 'astro';
 export const GET: APIRoute = async () => {
   const site = 'https://rofixservice.co.in';
   
-  // Saare pages ki list
   const pages = [
     '',
     '/kent',
