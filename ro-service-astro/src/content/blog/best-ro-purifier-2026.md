@@ -134,4 +134,4 @@ We've serviced over 20,000 purifiers across Bangalore. Here are the 7 best optio
 
 Rofix Service repairs Kent, Aquaguard, AO Smith, Pureit, LG, Livpure, Blue Star, Havells, Whirlpool across Bangalore.
 
-**Call +91-9008315606 for same-day service.**
+**Call +91-7090170092 for same-day service.**

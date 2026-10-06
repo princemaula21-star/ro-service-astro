@@ -117,4 +117,4 @@ Water with TDS below 50 ppm can taste flat and lacks essential minerals. Long-te
 - 200-500 ppm: RO recommended
 - Above 500 ppm: RO + TDS Controller is essential
 
-**Want a free TDS test at home? Call Rofix Service at +91-9008315606.**
+**Want a free TDS test at home? Call Rofix Service at +91-7090170092.**

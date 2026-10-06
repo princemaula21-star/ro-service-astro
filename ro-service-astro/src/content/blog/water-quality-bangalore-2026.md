@@ -99,7 +99,7 @@ Rofix Service now offers **free water testing** in Bangalore:
 - Chlorine test
 - Bacterial test (lab)
 
-**Call +91-9008315606 to schedule.**
+**Call +91-7090170092 to schedule.**
 
 ### DIY Testing
 - TDS meter: ₹200-500 (online)
@@ -134,4 +134,4 @@ Rofix Service offers:
 - Customized purifier recommendation
 - Same-day service if needed
 
-**Call +91-9008315606 to book your free test.**
+**Call +91-7090170092 to book your free test.**

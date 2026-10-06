@@ -96,4 +96,4 @@ A healthy RO pump makes a soft humming sound. If you hear grinding, screeching, 
 
 A ₹500 service today can prevent a ₹5,000 repair tomorrow. And more importantly — it protects your family's health.
 
-**Rofix Service offers same-day RO repair across Bangalore.** Call +91-9008315606 for a free diagnosis.
+**Rofix Service offers same-day RO repair across Bangalore.** Call +91-7090170092 for a free diagnosis.
