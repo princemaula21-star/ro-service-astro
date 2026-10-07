@@ -4,44 +4,126 @@ import Footer from '../components/Footer.astro';
 
 const brandName = 'AO Smith';
 ---
+
 <Layout>
   <main class="bg-white">
-    
-    <!-- TOP CONTENT SECTION - SEO Optimized -->
-    <section class="pt-6 pb-6 px-4 bg-white">
-      <div class="max-w-3xl mx-auto">
+
+    <!-- ==================== HERO SECTION (SEO + ADS OPTIMIZED) ==================== -->
+    <section class="relative w-full flex items-start overflow-hidden border-b border-slate-200">
+      
+      <!-- Background Image -->
+      <div class="absolute inset-0 z-0">
+        <img 
+          src="/ao-smith-service.jpg" 
+          alt="AO Smith Water Purifier Service in Bangalore - Same Day Doorstep"
+          class="w-full h-full object-cover object-center"
+          loading="eager"
+        />
+        <div class="absolute inset-0 bg-gradient-to-b from-white/90 via-white/75 to-white/95 md:bg-gradient-to-r md:from-white/90 md:via-white/60 md:to-transparent"></div>
+      </div>
+
+      <!-- Content -->
+      <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
         
-        <h1 class="text-2xl md:text-4xl font-bold text-slate-900 leading-tight tracking-tight">
-          AO Smith Water Purifier Service in Bangalore
-        </h1>
-        
-        <p class="mt-3 text-sm md:text-base text-slate-600 leading-relaxed">
-          Rofix Service is your trusted partner for reliable AO Smith water purifier services in Bangalore. From installation to maintenance and repairs, we ensure your AO Smith purifier delivers pure, healthy water at home.
+        <!-- Small Tag -->
+        <p class="text-[10px] md:text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+          AO SMITH RO SERVICE NEAR ME | SAME-DAY DOORSTEP REPAIR IN BANGALORE
         </p>
 
-        <div class="mt-4 flex items-center gap-2 text-sm">
-          <span class="text-yellow-500 tracking-wider">★★★★★</span>
-          <span class="text-slate-900 font-bold">4.8</span>
-          <span class="text-slate-300">|</span>
-          <span class="text-slate-600">20,000+ happy customers</span>
+        <!-- Main Heading -->
+        <h1 class="text-xl md:text-3xl font-black tracking-tight text-[#0c2b5e] leading-tight mb-1.5">
+          AO Smith Water Purifier Service in Bangalore
+        </h1>
+
+        <!-- Subheading -->
+        <p class="text-sm md:text-xl font-bold text-[#0066cc] mb-2">
+          Same Day Doorstep Service at ₹299 Only
+        </p>
+
+        <!-- Trust Line -->
+        <p class="text-[11px] md:text-sm font-bold text-slate-800 mb-1.5">
+          Verified Technicians · Genuine Parts · 90-Day Warranty
+        </p>
+
+        <!-- Description -->
+        <p class="text-[11px] md:text-sm text-slate-700 leading-snug max-w-md mb-3">
+          Book AO Smith water purifier repair online — technician reaches in 60-90 minutes. Genuine SCM membrane replacement, MIN-TECH cartridge change, motor repair, AMC plans. No visiting charge. 90-day service warranty. 20,000+ happy customers in Bangalore.
+        </p>
+
+        <!-- 6 Feature Badges -->
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-1.5 max-w-lg mb-3">
+          
+          <div class="flex items-center gap-1.5 bg-white/95 border border-slate-200 rounded-md px-2 py-1.5">
+            <div class="w-3.5 h-3.5 rounded-full border border-blue-200 bg-blue-50 flex items-center justify-center shrink-0">
+              <svg class="w-2 h-2 text-[#0066cc]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <span class="text-[10px] md:text-[11px] font-semibold text-slate-800">Same-Day Doorstep</span>
+          </div>
+
+          <div class="flex items-center gap-1.5 bg-white/95 border border-slate-200 rounded-md px-2 py-1.5">
+            <div class="w-3.5 h-3.5 rounded-full border border-blue-200 bg-blue-50 flex items-center justify-center shrink-0">
+              <svg class="w-2 h-2 text-[#0066cc]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <span class="text-[10px] md:text-[11px] font-semibold text-slate-800">Genuine SCM Membrane</span>
+          </div>
+
+          <div class="flex items-center gap-1.5 bg-white/95 border border-slate-200 rounded-md px-2 py-1.5">
+            <div class="w-3.5 h-3.5 rounded-full border border-blue-200 bg-blue-50 flex items-center justify-center shrink-0">
+              <svg class="w-2 h-2 text-[#0066cc]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <span class="text-[10px] md:text-[11px] font-semibold text-slate-800">₹299 Visiting Free</span>
+          </div>
+
+          <div class="flex items-center gap-1.5 bg-white/95 border border-slate-200 rounded-md px-2 py-1.5">
+            <div class="w-3.5 h-3.5 rounded-full border border-blue-200 bg-blue-50 flex items-center justify-center shrink-0">
+              <svg class="w-2 h-2 text-[#0066cc]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+            </div>
+            <span class="text-[10px] md:text-[11px] font-semibold text-slate-800">4.8★ (20,000+ Reviews)</span>
+          </div>
+
+          <div class="flex items-center gap-1.5 bg-white/95 border border-slate-200 rounded-md px-2 py-1.5">
+            <div class="w-3.5 h-3.5 rounded-full border border-blue-200 bg-blue-50 flex items-center justify-center shrink-0">
+              <svg class="w-2 h-2 text-[#0066cc]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
+            <span class="text-[10px] md:text-[11px] font-semibold text-slate-800">60-90 Min Response</span>
+          </div>
+
+          <div class="flex items-center gap-1.5 bg-white/95 border border-slate-200 rounded-md px-2 py-1.5">
+            <div class="w-3.5 h-3.5 rounded-full border border-blue-200 bg-blue-50 flex items-center justify-center shrink-0">
+              <svg class="w-2 h-2 text-[#0066cc]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+            </div>
+            <span class="text-[10px] md:text-[11px] font-semibold text-slate-800">90-Day Warranty</span>
+          </div>
+
+        </div>
+
+        <!-- CTA Button -->
+        <div class="flex flex-wrap items-center gap-2 mb-3">
+          <a href="tel:+917090170092" class="bg-[#0066cc] hover:bg-[#0055b3] text-white text-xs md:text-sm font-bold px-3 md:px-5 py-2 md:py-2.5 rounded-lg shadow-sm transition-all flex items-center gap-1.5">
+            <svg class="w-3 h-3 md:w-3.5 md:h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+            <span>Call Now — Book AO Smith Service</span>
+          </a>
+        </div>
+
+        <!-- Rating -->
+        <div class="flex items-center gap-2 flex-wrap">
+          <div class="flex items-center gap-1 bg-white/90 border border-slate-200 rounded-full px-2 py-0.5">
+            <span class="text-yellow-500 text-[11px]">★★★★★</span>
+            <span class="text-[11px] font-extrabold text-slate-900">4.8</span>
+          </div>
+          <span class="text-[10px] md:text-xs font-semibold text-slate-800">
+            <span class="font-bold text-slate-950">20,000+</span> happy customers
+          </span>
         </div>
 
       </div>
     </section>
 
-    <!-- FORM SECTION -->
-    <section class="pb-10 md:pb-14 px-4 bg-white">
+    <!-- ==================== FORM SECTION ==================== -->
+    <section class="pb-10 md:pb-14 px-4 bg-slate-50 pt-6 md:pt-8">
       <div class="max-w-md mx-auto">
         
-        <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-slate-100">
-          <img 
-            src="/ao-smith-service.jpg" 
-            alt="AO Smith Water Purifier Service"
-            width="800" height="600" loading="lazy" class="w-full h-56 md:h-64 object-cover"
-          />
-        </div>
-
-        <h2 class="text-2xl md:text-3xl font-bold text-blue-900 text-center leading-tight mt-8 mb-2">
+        <h2 class="text-2xl md:text-3xl font-bold text-blue-900 text-center leading-tight mb-2">
           Register Service Request
         </h2>
 
@@ -71,7 +153,8 @@ const brandName = 'AO Smith';
               <option value="AO Smith Water Purifier Repair">AO Smith Water Purifier Repair</option>
               <option value="AO Smith Water Purifier Installation">AO Smith Water Purifier Installation</option>
               <option value="AO Smith Water Purifier AMC Plan">AO Smith Water Purifier AMC Plan</option>
-              <option value="AO Smith Filter Replacement">AO Smith Filter Replacement</option>
+              <option value="AO Smith SCM Membrane Replacement">AO Smith SCM Membrane Replacement</option>
+              <option value="AO Smith MIN-TECH Cartridge Change">AO Smith MIN-TECH Cartridge Change</option>
             </select>
 
             <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-slate-900 font-bold py-3.5 rounded-md transition duration-300 text-sm tracking-wide">
@@ -194,11 +277,11 @@ const brandName = 'AO Smith';
         <div class="space-y-4 text-sm md:text-base text-slate-600 leading-relaxed">
           
           <p>
-            AO Smith is one of the most trusted water purifier brands in India, known for its premium build quality and advanced purification technology. However, like any water purifier, AO Smith purifiers require regular servicing to maintain peak performance — especially in a city like Bangalore where water TDS often exceeds 500 ppm.
+            AO Smith is one of the most trusted water purifier brands globally, known for its patented SCM (Side Stream Membrane) technology, MIN-TECH mineralizer, and advanced RO+UV purification. However, like any water purifier, AO Smith systems require regular servicing to maintain peak performance — especially in Bangalore where water TDS often exceeds 500 ppm.
           </p>
 
           <p>
-            At Rofix Service, we have over 15 years of experience servicing AO Smith water purifiers across Bangalore. Our certified technicians are trained on all AO Smith models, including Z8, Z9, X8, and all RO, UV, and UF variants. Whether you need a quick filter replacement or a complex motor repair, we handle everything at your doorstep.
+            At Rofix Service, we have over 15 years of experience servicing AO Smith water purifiers across Bangalore. Our certified technicians are trained on all AO Smith models, including Z8, Z9, X8, ProPlanet, and Green Series. Whether you need a MIN-TECH cartridge change or a complex hot water dispenser repair, we handle everything at your doorstep.
           </p>
 
           <h3 class="text-xl font-bold text-slate-900 mt-6 mb-3">
@@ -206,13 +289,13 @@ const brandName = 'AO Smith';
           </h3>
 
           <ul class="space-y-2 list-disc pl-5">
-            <li><strong>Slow water flow</strong> — Clogged sediment or carbon filter</li>
-            <li><strong>Bad taste or smell</strong> — Exhausted post-carbon filter</li>
-            <li><strong>TDS levels rising</strong> — Membrane degradation</li>
-            <li><strong>Motor not running</strong> — Pump failure or electrical issue</li>
-            <li><strong>Water leakage</strong> — Worn O-rings or cracked housing</li>
-            <li><strong>Frequent beeping</strong> — Filter change alert or sensor issue</li>
-            <li><strong>No water storage</strong> — Float valve malfunction</li>
+            <li><strong>Touch panel unresponsive</strong> — Sensor or PCB issue</li>
+            <li><strong>SCM membrane warning</strong> — Cartridge change indicator glowing</li>
+            <li><strong>Hot water failure</strong> — Thermostat or heating element issue</li>
+            <li><strong>Continuous draining</strong> — Auto-shutoff valve or pressure switch fault</li>
+            <li><strong>Water leakage</strong> — Worn high-pressure fittings</li>
+            <li><strong>Power light blinking</strong> — Display unit or SMPS failure</li>
+            <li><strong>Bad taste</strong> — Exhausted post-carbon or MIN-TECH cartridge</li>
           </ul>
 
           <h3 class="text-xl font-bold text-slate-900 mt-6 mb-3">
@@ -221,7 +304,7 @@ const brandName = 'AO Smith';
 
           <ul class="space-y-2 list-disc pl-5">
             <li><strong>Certified technicians</strong> — Trained on all AO Smith models</li>
-            <li><strong>Genuine spare parts</strong> — 100% authentic with manufacturer warranty</li>
+            <li><strong>Genuine SCM membranes</strong> — 100% authentic with warranty</li>
             <li><strong>Same-day service</strong> — Book before 2 PM, service today</li>
             <li><strong>Transparent pricing</strong> — Written quote before work begins</li>
             <li><strong>90-day warranty</strong> — On all repairs and spare parts</li>
@@ -233,7 +316,7 @@ const brandName = 'AO Smith';
           </h3>
 
           <p>
-            In Bangalore's water conditions, we recommend servicing your AO Smith purifier <strong>every 4-6 months</strong>. Filters and membranes should be replaced as per the manufacturer's guidelines — typically once a year. Regular servicing not only keeps your water safe but also extends the life of your purifier by 3-5 years.
+            In Bangalore's water conditions, we recommend servicing your AO Smith purifier <strong>every 4-6 months</strong>. MIN-TECH cartridges should be replaced every 12 months. Regular servicing not only keeps your water safe but also extends the life of your purifier by 3-5 years.
           </p>
 
           <p>
@@ -275,7 +358,7 @@ const brandName = 'AO Smith';
             <div class="w-6 h-6 bg-blue-900 rounded-full flex items-center justify-center shrink-0">
               <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
             </div>
-            <span class="text-sm text-slate-700 font-medium">Filter & membrane replacement</span>
+            <span class="text-sm text-slate-700 font-medium">SCM membrane & MIN-TECH replacement</span>
           </div>
 
           <div class="flex items-center gap-3 p-4 bg-white rounded-md border border-slate-200">
@@ -316,7 +399,7 @@ const brandName = 'AO Smith';
               <svg class="w-5 h-5 text-slate-400 shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </summary>
             <div class="px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4 ml-10">
-              A standard AO Smith service takes 45-60 minutes. Basic cleaning and filter checks take about 30-45 minutes, while comprehensive servicing with part replacements may take up to 90 minutes.
+              A standard AO Smith service takes 45-60 minutes. Basic cleaning and filter checks take about 30-45 minutes, while comprehensive servicing with SCM membrane or MIN-TECH cartridge replacement may take up to 90 minutes.
             </div>
           </details>
 
@@ -326,12 +409,12 @@ const brandName = 'AO Smith';
                 <div class="w-7 h-7 rounded-full bg-blue-50 flex items-center justify-center shrink-0">
                   <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 </div>
-                <span class="font-medium text-slate-900 text-sm md:text-base text-left">Do you use genuine AO Smith spare parts?</span>
+                <span class="font-medium text-slate-900 text-sm md:text-base text-left">Do you carry original AO Smith MIN-TECH and SCM filters?</span>
               </div>
               <svg class="w-5 h-5 text-slate-400 shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </summary>
             <div class="px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4 ml-10">
-              Yes, we use 100% genuine and authorized spare parts for all AO Smith purifiers. Every part comes with a manufacturer warranty. If the same issue recurs within our 90-day warranty, we fix it free of cost.
+              Yes, we stock genuine AO Smith pre-filter cartridges, sediment filters, activated carbon blocks, patented SCM membranes, and MIN-TECH mineral cartridges. Every part comes with a manufacturer warranty.
             </div>
           </details>
 
@@ -341,12 +424,12 @@ const brandName = 'AO Smith';
                 <div class="w-7 h-7 rounded-full bg-blue-50 flex items-center justify-center shrink-0">
                   <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 </div>
-                <span class="font-medium text-slate-900 text-sm md:text-base text-left">Which AO Smith models do you service?</span>
+                <span class="font-medium text-slate-900 text-sm md:text-base text-left">Can you repair heating and hot water dispensing faults on AO Smith Z8/Z9?</span>
               </div>
               <svg class="w-5 h-5 text-slate-400 shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </summary>
             <div class="px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4 ml-10">
-              We service all AO Smith models including Z8, Z9, X8, ProPlanet, and all RO, UV, and UF variants. Our technicians are trained on the latest AO Smith technology.
+              Yes, our senior technicians are certified in repairing heating elements, thermal safety sensors, and PCB controllers on AO Smith hot water RO units. We handle everything at your doorstep.
             </div>
           </details>
 

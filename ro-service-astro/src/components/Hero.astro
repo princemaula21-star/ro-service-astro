@@ -1,8 +1,19 @@
 ---
-// Hero.astro - Homepage Hero with Booking Form
+// Hero.astro - Homepage Hero with Booking Form (SEO + Ads Optimized) + Background Image
 ---
-<section class="relative w-full bg-slate-50 pt-6 pb-16 md:pt-10 md:pb-24 px-4 overflow-hidden">
-  
+<section class="relative w-full bg-slate-50 pt-6 pb-12 md:pt-10 md:pb-16 px-4 overflow-hidden">
+
+  <!-- ✅ Background Image -->
+  <div class="absolute inset-0 z-0">
+    <img 
+      src="/hero-bg.jpg" 
+      alt="Expert RO Repair & Service in Bangalore"
+      class="w-full h-full object-cover object-center"
+      loading="eager"
+    />
+    <div class="absolute inset-0 bg-gradient-to-b from-white/95 via-white/85 to-white/95 md:bg-gradient-to-r md:from-white/95 md:via-white/80 md:to-white/70"></div>
+  </div>
+
   <!-- Subtle Background Glow -->
   <div class="absolute top-[-10%] right-[-10%] w-96 h-96 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
   <div class="absolute bottom-[-10%] left-[-10%] w-96 h-96 bg-yellow-50 rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
@@ -18,13 +29,23 @@
         Trusted RO Service in Bangalore
       </div>
 
-      <!-- Heading -->
+      <!-- Small Tag - SEO -->
+      <p class="text-[10px] md:text-xs font-bold uppercase tracking-wider text-blue-700 mb-2">
+        RO SERVICE NEAR ME | SAME-DAY DOORSTEP REPAIR
+      </p>
+
+      <!-- Main Heading - SEO + Ads -->
       <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 leading-tight tracking-tight">
-        Expert <span class="text-blue-900">RO Repair</span> & Service
+        Expert <span class="text-blue-900">RO Repair</span> &amp; Service
       </h1>
       
+      <!-- Price Hook -->
+      <p class="mt-2 text-base md:text-xl font-bold text-blue-600">
+        Starting at ₹299 Only
+      </p>
+
       <p class="mt-3 text-slate-600 text-sm md:text-base max-w-md mx-auto">
-        Same-day doorstep service in Bangalore. Certified technicians, genuine spare parts, and 90-day service warranty.
+        Same-day doorstep service in Bangalore. Certified technicians, genuine spare parts, and 90-day service warranty. 20,000+ happy customers.
       </p>
 
       <!-- Feature Pills -->
