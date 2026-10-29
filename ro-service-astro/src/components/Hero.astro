@@ -153,21 +153,21 @@
     const formData = new FormData(form);
     
     try {
-      await fetch('https://formsubmit.co/ajax/roaquapurero@gmail.com', {
+      await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json'
         },
         body: JSON.stringify({
+          access_key: '84184350-ece2-42ab-a5da-ee3355285a3a',
           'Brand': formData.get('service'),
           'Booking ID': bookingId,
           'Name': formData.get('name'),
           'Mobile': formData.get('mobile'),
           'Pincode': formData.get('pincode'),
           'Address': formData.get('address'),
-          _subject: 'New Homepage Booking ' + bookingId + ' - ' + formData.get('name'),
-          _template: 'table'
+          subject: 'New Homepage Booking ' + bookingId + ' - ' + formData.get('name')
         })
       });
       window.location.href = '/thank-you';
