@@ -88,11 +88,11 @@ import Layout from '../layouts/Layout.astro';
   </main>
 </Layout>
 
-<script>
-  // Read Booking ID from sessionStorage
+<!-- ✅ is:inline ZAROORI hai -->
+<script is:inline>
+  // ---------- Booking ID Logic ----------
   let bookingId = sessionStorage.getItem('bookingId');
   
-  // Fallback: try URL parameter
   if (!bookingId) {
     const params = new URLSearchParams(window.location.search);
     bookingId = params.get('bookingId');
@@ -103,5 +103,27 @@ import Layout from '../layouts/Layout.astro';
     display.textContent = bookingId;
   } else if (display) {
     display.textContent = 'RFX-NOT-FOUND';
+  }
+
+  // ---------- ✅ FORM SUBMIT CONVERSION TRACKING ----------
+  // sessionStorage flag se duplicate conversion rok rahe hain
+  if (bookingId && !sessionStorage.getItem('conversion_fired')) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'generate_lead',
+      form_id: 'ro_service_form',
+      booking_id: bookingId
+    });
+
+    // Google Ads conversion
+    gtag('event', 'conversion', {
+      'send_to': 'AW-620206695/XXXXXXXX',   // ← Google Ads se FORM SUBMIT wali ID yahan daalein
+      'value': 1.0,
+      'currency': 'INR',
+      'transaction_id': bookingId          // duplicate rokne ke liye best practice
+    });
+
+    // Flag set karo taaki refresh par dobara fire na ho
+    sessionStorage.setItem('conversion_fired', 'true');
   }
 </script>
