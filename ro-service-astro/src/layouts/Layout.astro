@@ -41,6 +41,18 @@ import '../styles/global.css';
 		<!-- Canonical -->
 		<link rel="canonical" href={Astro.url} />
 
+		<!-- ============================================= -->
+		<!-- ✅ GOOGLE ADS TAG (ADDED) — is:inline ZAROORI -->
+		<!-- ============================================= -->
+		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=AW-620206695"></script>
+		<script is:inline>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'AW-620206695');
+		</script>
+		<!-- ============================================= -->
+
 		<!-- LocalBusiness Schema -->
 		<script type="application/ld+json" set:html={JSON.stringify({
 			"@context": "https://schema.org",
@@ -68,5 +80,20 @@ import '../styles/global.css';
 		<Header />
 		<slot />
 		<FloatingButtons />
+
+		<!-- ============================================= -->
+		<!-- ✅ SPA PAGEVIEW TRACKING (agar ViewTransitions use kar rahe hain) -->
+		<!-- Agar ViewTransitions use NAHI kar rahe, toh ise skip kar sakte hain -->
+		<!-- ============================================= -->
+		<script is:inline>
+			let isFirstLoad = true;
+			document.addEventListener('astro:page-load', () => {
+				if (isFirstLoad) { isFirstLoad = false; return; }
+				gtag('event', 'page_view', {
+					page_path: window.location.pathname,
+					page_title: document.title
+				});
+			});
+		</script>
 	</body>
 </html>
