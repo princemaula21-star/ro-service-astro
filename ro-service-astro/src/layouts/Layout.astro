@@ -41,9 +41,7 @@ import '../styles/global.css';
 		<!-- Canonical -->
 		<link rel="canonical" href={Astro.url} />
 
-		<!-- ============================================= -->
-		<!-- ✅ GOOGLE ADS TAG (ADDED) — is:inline ZAROORI -->
-		<!-- ============================================= -->
+		<!-- ✅ Google Ads Tag -->
 		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=AW-620206695"></script>
 		<script is:inline>
 			window.dataLayer = window.dataLayer || [];
@@ -51,7 +49,6 @@ import '../styles/global.css';
 			gtag('js', new Date());
 			gtag('config', 'AW-620206695');
 		</script>
-		<!-- ============================================= -->
 
 		<!-- LocalBusiness Schema -->
 		<script type="application/ld+json" set:html={JSON.stringify({
@@ -81,19 +78,47 @@ import '../styles/global.css';
 		<slot />
 		<FloatingButtons />
 
-		<!-- ============================================= -->
-		<!-- ✅ SPA PAGEVIEW TRACKING (agar ViewTransitions use kar rahe hain) -->
-		<!-- Agar ViewTransitions use NAHI kar rahe, toh ise skip kar sakte hain -->
-		<!-- ============================================= -->
+		<!-- ✅ Click-to-Call Conversion Function (GLOBAL) -->
 		<script is:inline>
-			let isFirstLoad = true;
-			document.addEventListener('astro:page-load', () => {
-				if (isFirstLoad) { isFirstLoad = false; return; }
-				gtag('event', 'page_view', {
-					page_path: window.location.pathname,
-					page_title: document.title
+			function gtag_report_conversion(url) {
+				var callback = function () {
+					if (typeof(url) != 'undefined') {
+						window.location = url;
+					}
+				};
+				gtag('event', 'conversion', {
+					'send_to': 'AW-620206695/KMMWCKzkj7YdEOe03qcC',
+					'value': 1.0,
+					'currency': 'INR',
+					'event_callback': callback
 				});
+				return false;
+			}
+
+			// Saare tel: links ko auto-track karein (event delegation)
+			document.addEventListener('click', function(e) {
+				const callLink = e.target.closest('a[href^="tel:"]');
+				if (callLink) {
+					e.preventDefault();
+					gtag_report_conversion(callLink.href);
+				}
 			});
 		</script>
+
+		<!-- ✅ TraceMyIP Visitor Tracking -->
+		<!-- Start: Copyright 2026 TraceMyIP.org Service Code (152556-11112026)- DO NOT MODIFY //-->
+		<div id="elemID031021" style="line-height:16px;text-align:center;z-index:100000;">
+			<script is:inline async type="text/javascript" src="//s3.tracemyip.org/vLg/lgUrl.php?pidnVar2=77661&prtVar2=1&stlVar2=1202&rgtype=4684NR-IPIB&scvVar2=12&gustVarS=3&gustVarU=55207&gustVarM=2"></script>
+			<div><a href="https://www.tracemyip.org/pv1-3-55207-2">web visits stats</a></div>
+			<noscript>
+				<div>
+					<a href="https://www.tracemyip.org/pv1-3-55207-2">
+						<img src="//s3.tracemyip.org/vLg/1202/4684NR-IPIB/77661/1/12/ans/" alt="Returning Visitor Tracker by TraceMyIP" referrerpolicy="no-referrer-when-downgrade" style="border:0px;" />
+					</a>
+				</div>
+			</noscript>
+		</div>
+		<!-- End: TraceMyIP.org Service Code //-->
+
 	</body>
 </html>
